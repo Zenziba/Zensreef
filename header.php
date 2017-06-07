@@ -3,23 +3,25 @@
 	   
 <html>
 	<head>
-	
-	<?php //to try and stop browser from caching and showing old values
-		header("Cache-Control: no-store, no-cache, must-revalidate"); // HTTP/1.1
-		header("Cache-Control: post-check=0, pre-check=0", false);
-		header("Expires: Sat, 26 Jul 1997 05:00:00 GMT"); // Date in the past
-		header("Pragma: no-cache"); // HTTP/1.0
-		header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
-	?>
+		<?php 
+			//to try and stop browser from caching and showing old values
+			//Credit: moderns https://stackoverflow.com/questions/1907653/how-to-force-page-not-to-be-cached-in-php
+			header("Cache-Control: no-store, no-cache, must-revalidate"); // HTTP/1.1
+			header("Cache-Control: post-check=0, pre-check=0", false);
+			header("Expires: Sat, 26 Jul 1997 05:00:00 GMT"); // Date in the past
+			header("Pragma: no-cache"); // HTTP/1.0
+			header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
+		?>
 
 		<link rel="stylesheet" type="text/css" href="splash.css">
+		
 		<title>
-		<?php
-			echo $pageName;
-		?>
+			<?php echo $pageName; ?>
 		</title>
+
 		<div class="header"><h1><?php echo $pageName; ?></h1></div>
-		<script>
+		
+		<script>//Google analytics tracking code
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -27,7 +29,6 @@
 
 		  ga('create', 'UA-100465387-1', 'auto');
 		  ga('send', 'pageview');
-
 		</script>
 	</head>
 

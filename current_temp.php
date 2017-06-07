@@ -4,12 +4,12 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script>
 
-	$.get( '/php1.php', function(latest_temp){
+	$.get( 'php1.php', function(latest_temp){
 		$('#current_temp').html( latest_temp );
 	});
 		
 	setInterval(function(){
-		$.get( '/php1.php', function(latest_temp){
+		$.get( 'php1.php', function(latest_temp){
 			$('#current_temp').html( latest_temp );
 		});
 	},5000); // 5000ms == 5 seconds

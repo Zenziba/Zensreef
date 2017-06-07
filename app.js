@@ -38,14 +38,6 @@ $(document).ready(function(){
 						text: 'The last 50 Temps'
 					},
 					scales:{
-						/*xAxes:[{
-							type: 'time',
-							time: {
-								displayFormats:{
-									quarter: 'MMM YYYY'
-								}
-							}
-						}],*/
 						yAxes:[{
 							display: true,
 							ticks:{
