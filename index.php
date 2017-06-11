@@ -4,7 +4,7 @@ $pageName='Home';
 include('header.php');
 ?>
 
-this should be inside the table
+Hello World!
 
 <?php
 include('footer.php');
