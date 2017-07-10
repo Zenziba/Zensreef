@@ -35,7 +35,7 @@ $(document).ready(function(){
 				options : {
 					title: {
 						display: true,
-						text: 'The last 50 Temps'
+						text: 'Temps from 1st of June'
 					},
 					scales:{
 						yAxes:[{
